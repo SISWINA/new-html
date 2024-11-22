@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1db954;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .auth-links .btn {
+      margin-left: 1rem;
+      background: #fff;
+      color: #1db954;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .hero {
+      height: 60vh;
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      margin: 1rem 0;
+    }
+
+    .hero .primary-btn {
+      background-color: #1db954;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .featured {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .playlist-grid {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .playlist-card {
+      text-align: center;
+    }
+
+    .playlist-card img {
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    .footer {
+      background-color: #181818;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Spotify</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#library">Your Library</a></li>
+      </ul>
+    </nav>
+    <div class="auth-links">
+      <button class="btn">Sign Up</button>
+      <button class="btn">Log In</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Feel the Music</h1>
+      <p>Stream your favorite songs anytime, anywhere.</p>
+      <button class="btn primary-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section id="featured" class="featured">
+    <h2>Featured Playlists</h2>
+    <div class="playlist-grid">
+      <div class="playlist-card">
+        <img src="https://via.placeholder.com/150" alt="Playlist 1">
+        <p>Top Hits</p>
+      </div>
+      <div class="playlist-card">
+        <img src="https://via.placeholder.com/150" alt="Playlist 2">
+        <p>Chill Vibes</p>
+      </div>
+      <div class="playlist-card">
+        <img src="https://via.placeholder.com/150" alt="Playlist 3">
+        <p>Workout Beats</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Spotify Clone. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
